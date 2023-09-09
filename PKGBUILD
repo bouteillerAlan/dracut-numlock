@@ -22,6 +22,7 @@ changelog=
 source=("https://github.com/bouteillerAlan/$pkgname/archive/refs/tags/v$pkgver.tar.gz")
 noextract=()
 md5sums=()
+sha256sums=('3c25ea9ae560a71655b422b8f343c0865dcae1564a20c2824295f6b7a5d2587d')
 validpgpkeys=()
 
 prepare() {
