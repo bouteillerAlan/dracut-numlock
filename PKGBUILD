@@ -25,27 +25,9 @@ md5sums=()
 sha256sums=('3c25ea9ae560a71655b422b8f343c0865dcae1564a20c2824295f6b7a5d2587d')
 validpgpkeys=()
 
-prepare() {
-        echo "prepare"
-	#cd "$pkgname-$pkgver"
-	#patch -p1 -i "$srcdir/$pkgname-$pkgver.patch"
-}
-
-build() {
-	echo "build"
-	#cd "$pkgname-$pkgver"
-	#./configure --prefix=/usr
-	#make
-}
-
-check() {
-	echo "check"
-	#cd "$pkgname-$pkgver"
-	#make -k check
-}
-
 package() {
-	echo "package"
-	#cd "$pkgname-$pkgver"
-	#make DESTDIR="$pkgdir/" install
+	cd "$pkgname-$pkgver"
+	#cp -r 50numlock/ /usr/lib/dracut/modules.d/
+	cp -r 50numlock/ /home/a2n/PhpstormProjects/xxxx
+	dracut -f
 }
