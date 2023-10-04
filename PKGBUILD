@@ -27,7 +27,6 @@ validpgpkeys=()
 
 package() {
 	cd "$pkgname-$pkgver"
-	#cp -r 50numlock/ /usr/lib/dracut/modules.d/
-	cp -r 50numlock/ /home/a2n/PhpstormProjects/xxxx
-	dracut -f
+	sudo cp -r 50numlock/ /usr/lib/dracut/modules.d/
+	sudo dracut-rebuild
 }
