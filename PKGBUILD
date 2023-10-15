@@ -15,4 +15,5 @@ package() {
   cd "${pkgname}-v${pkgver}"
   install -Dm 644 50numlock/module-setup.sh "${pkgdir}"/usr/lib/dracut/modules.d/50numlock/module-setup.sh
   install -Dm 644 50numlock/numlock.sh "${pkgdir}"/usr/lib/dracut/modules.d/50numlock/numlock.sh
+  install -D LICENSE "${pkgdir}"/usr/share/licenses/"${pkgname}"/LICENSE
 }
