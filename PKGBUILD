@@ -1,4 +1,5 @@
 # Maintainer: Bouteiller a2n Alan <a2n.dev@pm.me>
+# Contributor: FivEawE
 
 pkgname=dracut-numlock
 pkgver=1.0.1
