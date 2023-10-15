@@ -12,7 +12,7 @@ sha256sums=('3c25ea9ae560a71655b422b8f343c0865dcae1564a20c2824295f6b7a5d2587d')
 
 package() {
   cd "${pkgname}-${pkgver}"
-  install -Dm 644 50numlock/module-setup.sh "${pkgdir}/usr/lib/dracut/modules.d/50numlock/module-setup.sh"
-  install -Dm 644 50numlock/numlock.sh "${pkgdir}/usr/lib/dracut/modules.d/50numlock/numlock.sh"
+  install -Dm 644 50numlock/module-setup.sh "${pkgdir}"/usr/lib/dracut/modules.d/50numlock/module-setup.sh
+  install -Dm 644 50numlock/numlock.sh "${pkgdir}"/usr/lib/dracut/modules.d/50numlock/numlock.sh
 }
 
