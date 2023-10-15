@@ -18,3 +18,4 @@ package() {
   install -Dm 644 50numlock/numlock.sh "${pkgdir}"/usr/lib/dracut/modules.d/50numlock/numlock.sh
   install -D LICENSE "${pkgdir}"/usr/share/licenses/"${pkgname}"/LICENSE
 }
+
