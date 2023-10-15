@@ -8,6 +8,7 @@ arch=('any')
 url="https://github.com/bouteillerAlan/dracut-numlock"
 license=('MIT')
 source=("https://github.com/bouteillerAlan/${pkgname}/releases/download/${pkgname}-v${pkgver}/${pkgname}-v${pkgver}.tar.gz")
+depends=("sh")
 sha256sums=('74e9b5e4d58acff8835c4fd4503618afc035f5b29b02794be2463f8018eed39f')
 
 package() {
